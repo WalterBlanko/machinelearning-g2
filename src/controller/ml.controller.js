@@ -44,20 +44,19 @@ function leerDatosDeJSON(rutaArchivo) {
 }
 
 function testingSave(req, res) {
-  console.log(req.body)
-  // try {
-  //   const datos = {
-  //     nombre: req.body.nombre,
-  //     edad: req.body.edad,
-  //     ciudad: req.body.ciudad
-  //   };
+  try {
+    const datos = {
+      nombre: req.body.nombre,
+      edad: req.body.edad,
+      ciudad: req.body.ciudad
+    };
 
-  //   const rutaArchivo = 'datos.json';
+    const rutaArchivo = 'datos.json';
 
-  //   agregarDatosAJSON(datos, rutaArchivo);
-  // } catch (error) {
-  //   console.log(error);
-  // }
+    agregarDatosAJSON(datos, rutaArchivo);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 export { leerDatosDeJSON, testingSave };
