@@ -44,6 +44,7 @@ function leerDatosDeJSON(rutaArchivo) {
 }
 
 function testingSave(req, res) {
+  console.log(req.body);
   try {
     const datos = {
       nombre: req.body.nombre,
